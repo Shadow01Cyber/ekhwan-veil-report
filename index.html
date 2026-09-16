@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VEIL Report — @EkhwanAlEraqion</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:40px;max-width:500px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+.emoji{font-size:3em;margin-bottom:16px}
+h1{color:#f0883e;font-size:1.4em;margin-bottom:8px}
+p{color:#8b949e;margin:4px 0;font-size:0.95em}
+.target{color:#3fb950;font-weight:700;margin:12px 0;font-size:1.05em}
+.countdown{font-size:2.5em;font-weight:700;color:#f0883e;margin:20px 0}
+.bar{height:6px;background:#21262d;border-radius:3px;margin:16px 0;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#f0883e,#ff6a33);width:0%;transition:width 1s linear}
+.skip{background:#21262d;color:#8b949e;border:1px solid #30363d;padding:12px 24px;border-radius:8px;font-size:0.95em;cursor:pointer;margin-top:12px}
+.skip:hover{background:#30363d;color:#c9d1d9}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="emoji">🔥</div>
+<h1>Not a Template. Not a Copy-Paste. A Reckoning.</h1>
+<p>abuse@telegram.org + privacy@telegram.org</p>
+<div class="target">@EkhwanAlEraqion — 274+ posts of human wreckage</div>
+<div class="countdown" id="cd">5</div>
+<div class="bar"><div class="bar-fill" id="bar"></div></div>
+<button class="skip" onclick="go()">Send now</button>
+</div>
+<script>
+var to='abuse@telegram.org,privacy@telegram.org';
+var su='This is not a form letter - @EkhwanAlEraqion is a doxxing machine and someone needs to pull the plug';
+var body='To whoever reads this at Telegram,\n\n' +
+'You have received hundreds of reports about channels like this. You have probably built systems to filter them. You probably treat them as data points. I am writing to ask you, as a human being reading a message from another human being, to not do that this time.\n\n' +
+'There is a channel called @EkhwanAlEraqion. It has 274 posts. In those posts, it has published at least 12 complete phone numbers of real women. Their intimate photographs. Their Telegram usernames. Their faces. For 1,800 strangers to see, to save, to share, to call.\n\n' +
+'The operator has been banned before. Came back through @TRP_MONEY. Will come back again. Deletes posts within hours of reports filing. Has 11 different Telegram usernames to rotate through. This is not someone having a bad day. This is someone who has built a system.\n\n' +
+'Here is what I found when I looked:\n\n' +
+'Channel: @EkhwanAlEraqion\n' +
+'ID: -1004429332562\n' +
+'Backup: @TRP_MONEY (ID: -1003923900918)\n\n' +
+'The machine works like this:\n' +
+'Step 1: Find a woman.\n' +
+'Step 2: Get her photos. Her phone number. Her Telegram username.\n' +
+'Step 3: Post everything. Add a sexual caption. Publish to 1,800 people.\n' +
+'Step 4: Let the calls come in.\n' +
+'Step 5: When a report lands, delete the post. Move to the next one.\n' +
+'Step 6: When banned, switch to backup channel. Start again.\n\n' +
+'This is not content moderation. This is a manufacturing line for human suffering.\n\n' +
+'The violations:\n' +
+'1. Twelve phone numbers published. Twelve women answering calls they never asked for.\n' +
+'2. Intimate photos shared without consent. Private moments turned public entertainment.\n' +
+'3. Sexual captions written about women who never agreed to any of this.\n' +
+'4. 1,800 people given the tools to find and harass every victim listed.\n' +
+'5. 274 posts. Not one mistake. A quarter thousand deliberate acts of destruction.\n' +
+'6. Backup channel waiting. Because the operator knows the ban is temporary.\n' +
+'7. Eleven usernames. Because one identity is not enough for someone who knows what they are doing.\n' +
+'8. Posts deleted within hours. Because evidence has a shelf life and this operator knows exactly how long it lasts.\n' +
+'9. False channel description. Because even the metadata is designed to deceive.\n' +
+'10. Cross-platform stalking enabled. Phone number plus Telegram username equals no escape.\n' +
+'11. Gender-targeted. Every single victim is a woman. This is not random. This is a pattern.\n\n' +
+'Evidence:\n' +
+'https://t.me/EkhwanAlEraqion/1\n' +
+'https://t.me/EkhwanAlEraqion/16\n' +
+'https://t.me/EkhwanAlEraqion/124\n' +
+'https://t.me/EkhwanAlEraqion/141\n' +
+'https://t.me/EkhwanAlEraqion/147\n' +
+'https://t.me/EkhwanAlEraqion/161\n' +
+'https://t.me/EkhwanAlEraqion/172\n' +
+'https://t.me/EkhwanAlEraqion/251\n' +
+'https://t.me/EkhwanAlEraqion/271\n\n' +
+'What I am asking for:\n' +
+'1. Kill the channel. Not suspend. Kill.\n' +
+'2. Ban every account connected to this operator. All 11 usernames. Both channels.\n' +
+'3. Wipe every victim photo and phone number from your servers.\n' +
+'4. Preserve everything else. Logs. Metadata. Deleted posts. All of it.\n' +
+'5. Make sure this operator cannot come back a third time.\n\n' +
+'I know you receive thousands of reports. I know most of them are template text. I know this one probably looks like one too. It is not. Every word here was written after looking at what this channel actually does to real people.\n\n' +
+'The operator will delete posts tonight. Preserve the data before that happens.\n\n' +
+'Thank you for reading this far. I know your time is limited. So is the window to save this evidence.\n\n' +
+'Regards,\nSomeone who looked where most people scroll past';
+
+function go(){window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}
+var s=5;var el=document.getElementById('cd');var bf=document.getElementById('bar');
+var iv=setInterval(function(){s--;el.textContent=s;bf.style.width=((5-s)/5)*100+'%';if(s<=0){clearInterval(iv);go()}},1000);
+</script>
+</body>
+</html>
